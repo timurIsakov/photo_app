@@ -5,6 +5,7 @@ import 'package:photo_app/widgets/button_widget.dart';
 import 'package:photo_app/widgets/user_info_widget.dart';
 
 import '../entity/user_info_entity.dart';
+import 'register_screen.dart';
 
 class StartScreen extends StatefulWidget {
   const StartScreen({super.key});
@@ -78,7 +79,13 @@ class _StartScreenState extends State<StartScreen> {
                   width: 167,
                   text: "register",
                   color: Colors.black,
-                  onTap: () {}),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const RegisterScreen(),
+                        ));
+                  }),
             ],
           ),
         ],

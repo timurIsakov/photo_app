@@ -78,6 +78,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.3"
+  flutter_staggered_grid_view:
+    dependency: "direct main"
+    description:
+      name: flutter_staggered_grid_view
+      sha256: "19e7abb550c96fbfeb546b23f3ff356ee7c59a019a651f8f102a4ba9b7349395"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.7.0"
   flutter_svg:
     dependency: "direct main"
     description:
@@ -91,6 +99,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  keyboard_dismisser:
+    dependency: "direct main"
+    description:
+      name: keyboard_dismisser
+      sha256: f67e032581fc3dd1f77e1cb54c421b089e015d122aeba2490ba001cfcc42a181
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.0"
   lints:
     dependency: transitive
     description:
@@ -250,4 +266,4 @@ packages:
     version: "6.3.0"
 sdks:
   dart: ">=3.1.4 <4.0.0"
-  flutter: ">=3.7.0-0"
+  flutter: ">=3.7.0"
