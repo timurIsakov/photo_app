@@ -18,21 +18,26 @@ class UserInfoWidget extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.only(left: 8),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                entity.name,
-                style: const TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w700,
-                    color: Colors.black),
-              ),
-              Text(
-                entity.userName,
-                style: const TextStyle(fontWeight: FontWeight.w400, fontSize: 11),
-              )
-            ],
+          child: Container(
+            constraints: const BoxConstraints(maxHeight: 30),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  entity.name,
+                  style: const TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.black),
+                ),
+                Text(
+                  entity.userName,
+                  style: const TextStyle(
+                      fontWeight: FontWeight.w400, fontSize: 11),
+                )
+              ],
+            ),
           ),
         )
       ],

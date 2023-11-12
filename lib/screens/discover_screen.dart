@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:photo_app/entity/user_info_entity.dart';
 import 'package:photo_app/entity/user_post_entity.dart';
+import 'package:photo_app/screens/full_post_screen.dart';
 import 'package:photo_app/utils/assets.dart';
+import 'package:photo_app/widgets/bottom_navigation_widget.dart';
+import 'package:photo_app/widgets/button_widget.dart';
 import 'package:photo_app/widgets/post_card_widget.dart';
 
 class DiscoverScreen extends StatefulWidget {
@@ -20,11 +23,11 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
             name: "Ridhwan Nordin",
             userName: "@ridzjcob")),
     UserPostEntity(
-        Assets.tPost1hImage,
+        Assets.tPost2hImage,
         UserInfoEntity(
-            avatar: Image.asset(Assets.tAvatarManIcon),
-            name: "Ridhwan Nordin",
-            userName: "@ridzjcob")),
+            avatar: Image.asset(Assets.tAvatarMan2Icon),
+            name: "Clem Onojeghuo",
+            userName: "@clemono2")),
     UserPostEntity(
         Assets.tPost1hImage,
         UserInfoEntity(
@@ -75,7 +78,17 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
                         (index) => Padding(
                               padding: const EdgeInsets.only(right: 16),
                               child: PostCardWidget(
-                                  userPostEntity: listPostEntity[index]),
+                                userPostEntity: listPostEntity[index],
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => FullPostScreen(
+                                            userPostEntity:
+                                                listPostEntity[index]),
+                                      ));
+                                },
+                              ),
                             )),
                   ],
                 ),
@@ -86,10 +99,12 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
                 style: TextStyle(fontSize: 13, fontWeight: FontWeight.w900),
               ),
               const SizedBox(height: 24),
+              ButtonWidget(text: "see more", onTap: () {})
             ],
           ),
         ),
       )),
+      bottomNavigationBar: const BottomNavigationWidget(),
     );
   }
 }

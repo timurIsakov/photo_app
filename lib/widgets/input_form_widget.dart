@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class InputFormWidget extends StatelessWidget {
-  const InputFormWidget({Key? key}) : super(key: key);
+  final String? labelText;
+  const InputFormWidget({Key? key, this.labelText}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,11 +10,12 @@ class InputFormWidget extends StatelessWidget {
       height: 52,
       width: 343,
       child: TextFormField(
-        decoration: const InputDecoration(
-          enabledBorder: OutlineInputBorder(
+        decoration: InputDecoration(
+          labelText: labelText,
+          enabledBorder: const OutlineInputBorder(
             borderSide: BorderSide(width: 2, color: Colors.black),
           ),
-          focusedBorder: OutlineInputBorder(
+          focusedBorder: const OutlineInputBorder(
             borderSide: BorderSide(width: 2, color: Colors.black),
           ),
         ),

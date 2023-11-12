@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:photo_app/screens/search_screen.dart';
 
 import 'screens/start_screen.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const StartScreen(),
+      home: const SearchScreen(),
     );
   }
 }
