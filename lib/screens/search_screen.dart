@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 import 'package:photo_app/widgets/button_widget.dart';
 
-import '../widgets/bottom_navigation_widget.dart';
 import '../widgets/input_form_widget.dart';
 
 class SearchScreen extends StatefulWidget {
@@ -46,7 +45,6 @@ class _SearchScreenState extends State<SearchScreen> {
             ),
           ),
         ),
-        bottomNavigationBar: const BottomNavigationWidget(),
       ),
     );
   }

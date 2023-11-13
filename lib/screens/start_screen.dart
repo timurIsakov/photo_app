@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:photo_app/screens/log_in_screen.dart';
 import 'package:photo_app/utils/assets.dart';
 import 'package:photo_app/widgets/button_widget.dart';
 import 'package:photo_app/widgets/user_info_widget.dart';
@@ -72,7 +73,16 @@ class _StartScreenState extends State<StartScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ButtonWidget(
-                  height: 52, width: 167, text: "log in", onTap: () {}),
+                  height: 52,
+                  width: 167,
+                  text: "log in",
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const LogInScreen(),
+                        ));
+                  }),
               const SizedBox(width: 9),
               ButtonWidget(
                   height: 52,

@@ -11,4 +11,5 @@ class Assets {
   static const String tPost1hImage = "assets/images/post_1h_image.jpeg";
   static const String tPost2hImage = "assets/images/post_2h_image.jpeg";
   static const String tAvatarMan2Icon = "assets/images/avatar_man2_image.jpeg";
+  static const String tProfileAvatar = "assets/images/profile_avatar_image.jpeg";
 }

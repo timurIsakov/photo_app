@@ -3,7 +3,6 @@ import 'package:photo_app/entity/user_info_entity.dart';
 import 'package:photo_app/entity/user_post_entity.dart';
 import 'package:photo_app/screens/full_post_screen.dart';
 import 'package:photo_app/utils/assets.dart';
-import 'package:photo_app/widgets/bottom_navigation_widget.dart';
 import 'package:photo_app/widgets/button_widget.dart';
 import 'package:photo_app/widgets/post_card_widget.dart';
 
@@ -104,7 +103,6 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
           ),
         ),
       )),
-      bottomNavigationBar: const BottomNavigationWidget(),
     );
   }
 }

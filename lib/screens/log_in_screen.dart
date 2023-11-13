@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
+import 'package:photo_app/screens/main_screen.dart';
 
 import '../utils/assets.dart';
 import '../widgets/button_widget.dart';
 import '../widgets/input_form_widget.dart';
-import 'discover_screen.dart';
 
 class LogInScreen extends StatefulWidget {
   const LogInScreen({super.key});
@@ -60,7 +60,7 @@ class _LogInScreenState extends State<LogInScreen> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const DiscoverScreen(),
+                            builder: (context) => const MainScreen(),
                           ));
                     })
               ],

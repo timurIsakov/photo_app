@@ -3,7 +3,10 @@ import 'package:photo_app/entity/user_info_entity.dart';
 
 class UserInfoWidget extends StatelessWidget {
   final UserInfoEntity entity;
-  const UserInfoWidget({Key? key, required this.entity}) : super(key: key);
+  const UserInfoWidget({
+    Key? key,
+    required this.entity,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
